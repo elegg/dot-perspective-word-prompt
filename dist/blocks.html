@@ -22,7 +22,13 @@
 
     }
 
+                   try{
+
                     jatos= jatos || new FakeJatos()
+                   }
+                   catch{
+                    console.log("no jatos")
+                   }
 
                     window.onload = ()=>{
                     let p = document.createElement("p")
