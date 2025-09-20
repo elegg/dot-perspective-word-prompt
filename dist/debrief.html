@@ -1,0 +1,21 @@
+<html>
+    <!--script src="wpck-test/dist/main.js" type="module"></script-->
+    <head>
+
+    <script src="./jatos.js">
+
+
+    </script>
+    <script type="module">
+    import debrief from "./debrief.js"
+
+
+                    jatos.onload(()=>{
+                        debrief(jatos.studySessionData, jatos)
+                        jatos.endStudyWithoutRedirect()
+                    
+                    
+                    })   
+    </script>
+</head>
+</html>
