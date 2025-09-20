@@ -1,0 +1,3 @@
+The graph indicates how long it took for you to respond when the person in the room saw the same number of dots as you (the 'consistent' bar in the graph ) and how long it took for you to respond when the person in the room saw a different number of dots ('inconsistent bar').
+
+Previous research indicates that people tend to be faster to respond in the 'consistent' conditions of the experiment. We're investigating how the word you saw ('NOW' or 'YOU') and the time between the appearance of the person in the room and the appearance of the dots can influence this. 

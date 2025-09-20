@@ -1,0 +1,212 @@
+::backdrop
+{
+    background-color: rgb(241, 241, 241);
+}
+
+html, body {
+    background-color: rgb(241, 241, 241);
+    font-family: 'Open Sans';
+    width:100vw;
+    height:100vh;
+}
+
+body .room{
+    height:100vh;
+}
+
+.trial-prompt {
+    font-size: 48px;
+    font-weight: 800;
+}
+.instructions {
+            background-color: white;
+            max-width: 720px;
+            margin: 36px auto 200px;
+            
+            font-family: 'Open Sans';
+            padding: 24px 36px;
+
+            text-align: left;
+            font-weight: 300;
+            box-shadow: 1px 1px 8px rgba(160, 160, 160, 0.513);
+            font-weight: 200;
+                font-size: 16px;
+            
+            & p {
+                font-weight: 200;
+                font-size: 16px;
+                
+                & strong {
+                font-weight:800;
+            }
+            }
+        }
+
+        .minor-text{
+            font-size:12px;
+        }
+
+        .timeline-container{
+            max-width: 100%;
+            display:flex;
+            flex-direction: column;
+            gap:16px;
+            background-color: white;
+            padding:12px;
+
+        }
+
+        .timeline {
+            display: flex;
+            flex-direction: row;
+            height: 48px;
+            padding:12px;
+            background-color: rgb(255, 255, 255);
+            border: solid black 1px;
+            gap:8px;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .timeline-container .room{
+            height:100%;
+        }
+
+        .image{
+            max-width: 580px;
+            width:580px;
+            
+        }
+        div[data-image-focus]:hover{
+            cursor: pointer;
+            opacity:50%;
+        }
+
+        div[data-image-focus="true"]{
+            outline:rgb(0, 209, 38) 3px solid;
+        }
+
+        .focused-timeline{
+            height:180px;
+        }
+
+        .timeline-description{
+            font-size:0.8em;
+            background-color: white;
+            max-width: 580px;
+            margin:auto;
+            text-align: left;
+            border-top:lightgrey 1px solid;
+            border-bottom:lightgrey 1px solid;
+            
+
+        
+        }
+
+
+.sound-selector{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width:max-content;
+    align-items: center;
+
+    background-color: black;
+    border-radius: 34px;
+    padding:2px 32px 2px 4px;
+    overflow: hidden;
+    height:64px;
+    gap:24px;
+
+}
+
+.sound-button{
+    all:unset;
+    width:60px;
+    height:60px;
+    border-radius: 30px;
+    padding:12px;
+    box-sizing: border-box;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgb(223, 223, 223);
+    cursor: pointer;
+    transition-duration: 500ms;
+}
+
+.sound-button:hover{
+    background-color: white;
+}
+
+.sound-button>svg{
+    stroke:rgb(0, 0, 0);
+}
+
+.sound-selector>input[type='range']{ 
+    accent-color: rgb(197, 197, 197); 
+    width:200px;
+}
+
+
+
+.slide-show-gen{
+    font-weight: 600;
+    padding:12px;
+    background-color: rgb(240, 240, 240);
+    border: 2px black solid;
+    cursor: pointer;
+    border-radius: 12px;;
+}
+
+.instructions[data-selected="yes"]  .slide-show-gen[data-trial="yes"]{
+   background-color: black;
+   color:white;
+}
+
+.instructions[data-selected="no"]  .slide-show-gen[data-trial="no"]{
+    background-color: black;
+   color:white;
+ }
+
+ .redirect-widget{
+    background-color: white;
+    padding:24px 16px;
+    position:fixed;
+     bottom:20px;
+     right:20px;
+     max-width: 200px;
+     border-radius: 8px;
+     width:min-content;
+     display:flex;
+     flex-direction: column;
+     gap:12px;
+     box-shadow: 1px 1px 8px rgba(160, 160, 160, 0.513);
+
+     
+
+ }
+
+ .redirect-link{
+     all:unset;
+     background-color: rgb(18, 49, 190);
+     font-size: 16px;
+     padding:8px 12px;
+     color:white;
+     cursor: pointer;
+     border-radius: 6px;
+     width:max-content;
+     box-shadow: 1px 1px 8px rgba(160, 160, 160, 0.513);
+
+
+ }
+
+ .redirect-link:hover{
+     opacity:50%;
+ }
+
+ .hidden-button{
+    visibility: hidden;
+ }

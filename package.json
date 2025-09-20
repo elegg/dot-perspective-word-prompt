@@ -1,0 +1,45 @@
+{
+  "name": "wpck-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "mode": "production",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js",
+    "deploy": "docker cp /Users/ed/metacognition/wpck-test/dist/. 0fac18dc778a000fd67f9bc0890fd2a33c148f7bce7cb0e1cd3d30978cb3c4a6:/opt/jatos_data/study_assets_root/1e77c705-f14c-431e-81ab-bcdc0cd3d053",
+    "jatos": "docker run -d -p 9000:9000 --volume jatos_data:/opt/jatos_data jatos/jatos:latest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@jspsych/plugin-html-button-response": "^2.1.0",
+    "@jspsych/plugin-html-keyboard-response": "^2.1.0",
+    "css-loader": "^7.1.2",
+    "style-loader": "^4.0.0",
+
+    "file-loader": "^6.2.0",
+    "html-loader": "^5.1.0",
+    "jspsych": "^8.2.1",
+    "marked": "^15.0.11",
+    "terser-webpack-plugin": "^5.3.14",
+    "webpack": "^5.99.8",
+    "webpack-cli": "^6.0.1"
+  },
+  "dependencies": {
+    "@jspsych/plugin-html-button-response": "^2.1.0",
+    "@jspsych/plugin-html-keyboard-response": "^2.1.0",
+    "@jspsych/plugin-preload": "^2.1.0",
+    "@observablehq/plot": "^0.6.17",
+    "feather-icons": "^4.29.2",
+    "html-loader": "^5.1.0",
+    "marked": "^15.0.11",
+    "remark": "^15.0.1",
+    "remark-html": "^16.0.1",
+    "remark-loader": "^6.0.0",
+    "survey-core": "^2.0.8",
+    "survey-js-ui": "^2.0.8"
+  }
+}
